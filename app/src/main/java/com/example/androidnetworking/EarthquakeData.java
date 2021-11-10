@@ -2,35 +2,35 @@ package com.example.androidnetworking;
 
 public class EarthquakeData {
 
-    private final String mMagnitude;
+    private final double mMagnitude;
     private final String mLocation;
-    private final String mDate;
+    private final long mTimeInMilliseconds;
 
-    public EarthquakeData(String magnitude, String location, String date) {
+    public EarthquakeData(double magnitude, String location, long timeInMilliseconds) {
         this.mMagnitude = magnitude;
         this.mLocation = location;
-        this.mDate = date;
+        this.mTimeInMilliseconds = timeInMilliseconds;
     }
 
     /**
-     * Get the magnitude
+     * Get the magnitude return the result
      */
-    public String getmMagnitude() {
+    public double getmMagnitude() {
         return mMagnitude;
     }
 
     /**
-     * Get the location
+     * Get the location and return the result
      */
     public String getmLocation() {
         return mLocation;
     }
 
     /**
-     * Get the date
+     * Get the date return the result
      */
-    public String getmDate() {
-        return mDate;
+    public long getmTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
 }
