@@ -5,11 +5,13 @@ public class EarthquakeData {
     private final double mMagnitude;
     private final String mLocation;
     private final long mTimeInMilliseconds;
+    private final String mUrl;
 
-    public EarthquakeData(double magnitude, String location, long timeInMilliseconds) {
+    public EarthquakeData(double magnitude, String location, long timeInMilliseconds, String url) {
         this.mMagnitude = magnitude;
         this.mLocation = location;
         this.mTimeInMilliseconds = timeInMilliseconds;
+        this.mUrl = url;
     }
 
     /**
@@ -31,6 +33,10 @@ public class EarthquakeData {
      */
     public long getmTimeInMilliseconds() {
         return mTimeInMilliseconds;
+    }
+
+    public String getmUrl() {
+        return mUrl;
     }
 
 }
