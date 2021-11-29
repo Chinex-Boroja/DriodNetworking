@@ -105,7 +105,7 @@ public class EarthquakeAdapter extends ArrayAdapter<EarthquakeData> {
         // Get the date from the current EarthquakeData object and
         // set this text on the date TextView
 
-        // Find the TextView with view ID time
+        // Find the TextView with view ID's time
         TextView timeView = (TextView) listItemView.findViewById(R.id.time);
         // Format the time string (i.e. "4:30PM")
         String formattedTime = formatTime(dateObject);
